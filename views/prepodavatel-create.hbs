@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>{{title}}</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<div class="container mt-md-5 col-6">
+    <a href="/prepodavatel" class="badge badge-info">Список преподавателей</a>
+    <h1 class="display-4">Добавить преподавателя</h1>
+    <form method="POST">
+        <div class="form-group">
+            <label for="fio">ФИО</label>
+            <input type="text" name="fio" class="form-control" id="fio" required>
+        </div>
+        <div class="form-group">
+            <label for="pol">Пол</label>
+            <input type="text" name="pol" class="form-control" id="pol" required>
+        </div>
+        <div class="form-group">
+            <label for="datarojdenia">Дата рождения</label>
+            <input type="text" name="datarojdenia" class="form-control" id="datarojdenia" required>
+        </div>
+        <div class="form-group">
+            <label for="mestorojdenia">Место рождения</label>
+            <input type="text" name="mestorojdenia" class="form-control" id="mestorojdenia" required>
+        </div>
+        <div class="form-group">
+            <label for="adress">Адрес</label>
+            <input type="text" name="adress" class="form-control" id="adress" required>
+        </div>
+        <div class="form-group">
+            <label for="pasport">Паспорт</label>
+            <input type="text" name="pasport" class="form-control" id="pasport" required>
+        </div>
+        <div class="form-group">
+            <label for="telefon">Телефон</label>
+            <input type="number" name="telefon" class="form-control" id="telefon" required>
+        </div>
+        <div class="form-group">
+            <label for="doljnost">Должность</label>
+            <input type="text" name="doljnost" class="form-control" id="doljnost" required>
+        </div>
+        <div class="form-group">
+            <label for="stepen">Степень</label>
+            <input type="text" name="stepen" class="form-control" id="stepen" required>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Пол</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="pol" value="1" required>
+                        <label class="form-check-label" for="pol">
+                            Мужской
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="pol" value="0">
+                        <label class="form-check-label" for="pol">
+                            Женский
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <label for="position">Должность</label>
+            <input type="text" name="position" class="form-control" id="position" required>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">С
+                    тепень</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="is_teaching" id="is_teaching"
+                               value="1" required>
+                        <label class="form-check-label" for="is_teaching">
+                            Да
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="is_teaching" id="not_teaching"
+                               value="0">
+                        <label class="form-check-label" for="not_teaching">
+                            Нет
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-info">Создать</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+<html>
